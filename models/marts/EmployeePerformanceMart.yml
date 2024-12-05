@@ -1,0 +1,27 @@
+version: 2
+
+models:
+  - name: EmployeePerformanceMart
+    description: "Data mart for tracking employee performance metrics including average ratings, total compensation, turnover rates, and job changes."
+    columns:
+      - name: employeeid
+        description: "Unique identifier for each employee."
+        tests:
+          - unique
+          - not_null
+      - name: firstname
+        description: "First name of the employee."
+      - name: lastname
+        description: "Last name of the employee."
+      - name: departmentid
+        description: "Identifier for the department the employee belongs to."
+      - name: jobid
+        description: "Identifier for the employee's job."
+      - name: average_performance_rating
+        description: "Average performance rating of the employee."
+      - name: total_compensation
+        description: "Total compensation of the employee."
+      - name: employee_turnover_rate
+        description: "Turnover rate of the employee."
+      - name: job_changes_per_employee
+        description: "Number of job changes per employee."
